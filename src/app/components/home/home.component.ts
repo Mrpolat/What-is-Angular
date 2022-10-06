@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  users : any[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.users = [
+      {
+        name:'polat',
+        age:22
+      },
+      {
+        name:'adem',
+        age:25
+      },
+    ]
   }
 
 }
