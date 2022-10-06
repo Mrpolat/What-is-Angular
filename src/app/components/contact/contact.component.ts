@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   username: any;
   users:any;
-
+  today=Date.now();
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {

@@ -2,6 +2,11 @@
 <div>{{username}}</div>
 <ul>
     <li *ngFor="let user of users">
-        {{user.name}}
+        {{user.name | avatar}}
     </li>
 </ul>
+
+{{today | date:'d MMMM Y' | uppercase}}
+<br>
+{{11300 | currency}}
+
